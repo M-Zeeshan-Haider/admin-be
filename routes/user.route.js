@@ -6,8 +6,8 @@ module.exports = (app) => {
     app.post('/login', userController.login);
 
     app.post('/signup', userController.signup);
-    // app.use(jwt.jwtHandler);
-    // app.use(jwt.jwtHeaders);
+    app.use(jwt.jwtHandler);
+    app.use(jwt.jwtHeaders);
     app.post('/createtoken', userController.createToken);
 
     app.post('/listtoken', userController.listToken);
