@@ -29,7 +29,7 @@ const db = require('./config/db.config');
 
  var PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-    console.log('app is live at 1234');
+    console.log('app is live at 5000');
 });
 
 
